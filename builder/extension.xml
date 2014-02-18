@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension xmlns="http://ns.adobe.com/air/extension/4.0">
+    <id>com.iyuanfei.getimei.extension</id>
+    <versionNumber>0.0.1</versionNumber>
+    <platforms>
+        <platform name="Android-ARM">
+            <applicationDeployment>
+                <nativeLibrary>airextension.jar</nativeLibrary>
+                <initializer>com.iyuanfei.extension.AirExtension</initializer>
+            </applicationDeployment>
+        </platform>
+      
+    </platforms>
+</extension>
