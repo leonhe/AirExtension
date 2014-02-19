@@ -24,7 +24,10 @@ public class GetPhoneNumber implements FREFunction {
 			Context context = ctx.getActivity();
 			PhoneInfo phoneInfo = new PhoneInfo(context);
 			String phoneNumber = phoneInfo.getPhoneNumber();
-			Log.d(tag, phoneNumber);
+			if(phoneNumber!=null)
+			{
+				Log.d(tag, phoneNumber);
+			}
 			result=FREObject.newObject(phoneNumber);
 			phoneInfo.remove();
 			phoneInfo=null;
@@ -32,8 +35,6 @@ public class GetPhoneNumber implements FREFunction {
 			Log.d(tag,e.getMessage());
 			e.printStackTrace();
 		}
-		
-		
 		
 		return result;
 	}

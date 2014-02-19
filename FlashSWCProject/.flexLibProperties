@@ -2,6 +2,7 @@
 <flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
   <includeClasses>
     <classEntry path="com.iyuanfei.extension.PhoneMessage"/>
+    <classEntry path="com.iyuanfei.extension.KeyConst"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

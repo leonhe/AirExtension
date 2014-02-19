@@ -7,6 +7,7 @@ import android.util.Log;
 
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
+import com.iyuanfei.extension.fun.AlertDialogFunction;
 import com.iyuanfei.extension.fun.GetIMEIFunction;
 import com.iyuanfei.extension.fun.GetPhoneNumber;
 
@@ -33,6 +34,7 @@ public class AirExtensionContext extends FREContext {
 		Map<String,FREFunction> functionMap = new HashMap<String, FREFunction>();
 		functionMap.put(GetIMEIFunction.KEY, new GetIMEIFunction());//移动设备信息管理
 		functionMap.put(GetPhoneNumber.KEY, new GetPhoneNumber());//获取当前激活号码
+		functionMap.put(AlertDialogFunction.KEY, new AlertDialogFunction());
 		return functionMap;
 	}
 	
@@ -40,5 +42,5 @@ public class AirExtensionContext extends FREContext {
 	{
 		return tag;
 	}
-
+	
 }
